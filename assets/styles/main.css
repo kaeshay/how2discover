@@ -1,0 +1,90 @@
+html {
+	font-family: 'Space Mono', monospace;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.title {
+	position: relative;
+	left: 40px;
+}
+
+.title:hover {
+	color: pink;
+	text-decoration: underline wavy black;
+}
+
+p {
+	margin-left: 60px;
+}
+
+.posts, .contacts {
+	positions: relative;
+	margin-left: 200px;
+	line-height: 25px;
+	list-style: none;
+}
+
+.posts a:hover{
+	 text-decoration: line-through;
+	 text-decoration-color: #ff7900;
+}
+
+.contacts ul{
+	list-style: none;
+	font-size: 10px;
+}
+
+.info {
+	display: none;
+}
+
+.name:hover .info{
+	display: block;
+}
+
+footer {
+	position: fixed;
+	left: 40px;
+	bottom: 0px;
+	padding: 20px;
+	font-size: 10px;
+	background-color: white;
+	height: 20px;
+}
+
+footer a:link{
+	padding: 10px;
+}
+
+footer a:hover{
+	 text-decoration: overline;
+	 text-decoration-color: pink;
+}
+
+@media (max-width: 6in){
+	.title {
+		font-size: 12px;
+		left: 10px;
+	}
+	.content {
+		margin-left: 20px;
+	}
+	.posts, .contacts{
+		margin-left: 10px;
+	}
+	.contacts .name{
+		font-size: 12px;
+	}
+	footer {
+		left: -10px;
+		padding-bottom:30px;
+	}
+	footer a:link{
+		font-size: 7px;
+		line-height: 20px;
+	}
+}
