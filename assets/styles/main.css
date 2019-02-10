@@ -17,8 +17,51 @@ a {
 	text-decoration: underline wavy black;
 }
 
-p {
-	margin-left: 60px;
+.content {
+	margin-left: 200px;
+	margin-right: 200px;
+	overflow: auto;
+	margin-bottom: 60px;
+}
+
+.content a{
+	color: pink;
+}
+
+.content a:hover{
+	color: #ff7900;
+}
+
+table {
+	margin-bottom: 20px;
+}
+
+th, td{
+	border: 1px solid black;
+/*	border-collapse: collapse;*/
+	padding: 10px;
+	font-size: 12px;
+}
+
+strong>em,
+em>strong,
+b>i,
+i>b{
+	font-style:normal;
+    font-weight:bold;
+    font-size: 20px;
+    border-bottom: 1px dashed;
+}
+
+img {
+	padding: 20px;
+	width: 200px;
+	display: block;
+/*	overflow: auto;*/
+}
+
+img:hover{
+	width: 500px;
 }
 
 .posts, .contacts {
@@ -54,6 +97,7 @@ footer {
 	font-size: 10px;
 	background-color: white;
 	height: 20px;
+	width: 100vw;
 }
 
 footer a:link{
@@ -65,19 +109,17 @@ footer a:hover{
 	 text-decoration-color: pink;
 }
 
-@media (max-width: 6in){
+@media (max-width: 10in){
 	.title {
 		font-size: 12px;
 		left: 10px;
 	}
 	.content {
 		margin-left: 20px;
+		margin-right: 40px;
 	}
 	.posts, .contacts{
 		margin-left: 10px;
-	}
-	.contacts .name{
-		font-size: 12px;
 	}
 	footer {
 		left: -10px;
